@@ -76,7 +76,7 @@ const Home = () => {
 
       <footer className="mt-20 mb-8 border-t border-slate-200 dark:border-slate-800 pt-8 w-full max-w-lg flex flex-col items-center gap-4 animate-in fade-in duration-500">
         <p className="text-slate-500 dark:text-slate-400 text-sm flex items-center justify-center gap-1.5 flex-wrap">
-          &copy; 2026 CampusRide. Made by student from student with <Heart size={14} className="text-red-500 fill-red-500" /> and hardwork.
+          &copy; 2026 CampusRide. Made by student for student with <Heart size={14} className="text-red-500 fill-red-500" /> and hardwork.
         </p>
         <a 
           href="https://github.com/milanprajapati571/rickshaw-matching-system" 
