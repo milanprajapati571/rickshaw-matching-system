@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter, Routes, Route, Link } from 'react-router-dom';
 import { Sun, Moon } from 'lucide-react';
 import Home from './pages/Home';
 import Passenger from './pages/Passenger';
@@ -31,7 +31,7 @@ function App() {
 
   const toggleTheme = () => setIsDarkMode(!isDarkMode);
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100">
         <nav className="bg-white dark:bg-slate-900 shadow-sm dark:shadow-slate-900/50 p-4 sticky top-0 z-10 transition-colors duration-200">
           <div className="max-w-5xl mx-auto flex justify-between items-center">
@@ -64,7 +64,7 @@ function App() {
           </Routes>
         </main>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
