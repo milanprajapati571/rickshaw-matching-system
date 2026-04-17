@@ -1,11 +1,22 @@
 import * as admin from 'firebase-admin';
+import * as path from 'path';
 
+let serviceAccount: admin.ServiceAccount;
 
-const serviceAccount = require('../serviceAccountKey.json');
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-  databaseURL: 'https://rickshaw-matching-system-default-rtdb.firebaseio.com'
-});
+if (process.env.FIREBASE_SERVICE_ACCOUNT_KEY) {
+  // Production (Render): load from environment variable
+  serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY) as admin.ServiceAccount;
+} else {
+  // Local development: load from file
+  serviceAccount = require(path.join(__dirname, '../serviceAccountKey.json'));
+}
+
+if (!admin.apps.length) {
+  admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    databaseURL: 'https://rickshaw-matching-system-default-rtdb.firebaseio.com'
+  });
+}
 
 export const db = admin.database();
 
