@@ -11,6 +11,7 @@ const server = http.createServer(app);
 
 const allowedOrigins = [
   'https://milanprajapati571.github.io',
+  'https://milanprajapati571.github.io/rickshaw-matching-system',
   'http://localhost:5173',
   'http://localhost:4173'
 ];
