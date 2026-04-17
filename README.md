@@ -68,4 +68,15 @@ Inside the Admin Dashboard, the portal can:
 - **Socket.io (WebSockets):** Completely nullifies the need to long-poll APIs. Both drivers and passengers execute HTTP connections securely bound by WebSockets. Emitting broadcasts triggers direct state mutation flawlessly across endpoints.
 
 ---
-*&copy; 2026 CampusRide. Made by student from student with ❤️ and hardwork.*
+
+## 👥 Team Members
+
+| Name | Role | GitHub |
+|------|------|--------|
+| **Milan Prajapati** | Backend Architecture, Admin Portal, Socket Matching | [@milanprajapati571](https://github.com/milanprajapati571) |
+| **Soumith** | Passenger & Driver UI, Frontend Socket Integration | [@soumith5](https://github.com/soumith5) |
+| **Sri Lakshmi** | Frontend Setup, Home Page, Dark Mode & Styling | [@SriLakshmi-Matturty](https://github.com/SriLakshmi-Matturty) |
+| **Sujith** | Backend Initialization, Firebase & Server Structure | [@Sujith-Medithi](https://github.com/Sujith-Medithi) |
+
+---
+*&copy; 2026 CampusRide. Built with ❤️ by a team of students, for students.*
